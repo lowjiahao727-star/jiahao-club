@@ -1,0 +1,218 @@
+/* =======================
+   嘉豪俱乐部 UI
+======================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Microsoft YaHei",sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding-bottom:90px;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+/* 顶部 */
+
+.top{
+    background:#FFD400;
+    padding:20px 15px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.logo{
+    color:#000;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.search{
+    background:#fff;
+    border-radius:40px;
+    display:flex;
+    align-items:center;
+    padding:12px 15px;
+}
+
+.search i{
+    color:#888;
+}
+
+.search input{
+    border:none;
+    outline:none;
+    flex:1;
+    margin-left:10px;
+    font-size:15px;
+}
+
+/* Banner */
+
+.banner{
+    padding:15px;
+}
+
+.banner img{
+    width:100%;
+    border-radius:15px;
+    display:block;
+}
+
+/* 公告 */
+
+.notice{
+    background:#fff;
+    margin:0 15px;
+    border-radius:12px;
+    padding:15px;
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.notice-left{
+    font-size:22px;
+}
+
+.notice-text{
+    margin-left:10px;
+    color:#666;
+    font-size:14px;
+}
+
+/* 分类 */
+
+.category{
+    display:flex;
+    justify-content:space-around;
+    padding:0 15px;
+    margin-bottom:15px;
+}
+
+.category .item{
+    background:#fff;
+    width:70px;
+    height:70px;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+    font-weight:bold;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.category .active{
+    background:#FFD400;
+}
+
+/* 商品 */
+
+.goods{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    padding:15px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:10px;
+    font-size:17px;
+}
+
+.card p{
+    padding:0 10px;
+    color:#777;
+    font-size:13px;
+}
+
+.price{
+    padding:10px;
+    color:#ff3b30;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.card button{
+    width:calc(100% - 20px);
+    margin:0 10px 10px;
+    height:42px;
+    border:none;
+    border-radius:10px;
+    background:#FFD400;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* 底部 */
+
+.bottom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:70px;
+    background:#fff;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-top:1px solid #eee;
+}
+
+.bottom a{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:13px;
+    color:#666;
+}
+
+.bottom i{
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.bottom .active{
+    color:#FFD400;
+}
+
+/* 手机适配 */
+
+@media(max-width:480px){
+
+.goods{
+grid-template-columns:1fr 1fr;
+}
+
+.card img{
+height:140px;
+}
+
+.logo{
+font-size:22px;
+}
+
+  }
