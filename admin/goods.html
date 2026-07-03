@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商品管理</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="header">
+商品管理
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<input id="title" class="input" placeholder="商品名称">
+
+<input id="price" class="input" placeholder="价格">
+
+<input id="category" class="input" placeholder="商品分类">
+
+<textarea
+id="desc"
+class="input"
+style="height:120px;padding-top:10px;"
+placeholder="商品介绍"></textarea>
+
+<input
+type="file"
+id="image"
+class="input">
+
+<button
+class="btn"
+id="saveBtn">
+
+添加商品
+
+</button>
+
+</div>
+
+<hr>
+
+<div id="goodsList"></div>
+
+</div>
+
+<script type="module" src="../js/goods.js"></script>
+
+</body>
+</html>
